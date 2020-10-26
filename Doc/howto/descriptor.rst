@@ -95,7 +95,7 @@ Interesting descriptors typically run computations instead of doing lookups::
         def __init__(self, dirname):
             self.dirname = dirname          # Regular instance attribute
 
-An interactive session shows that the lookup is dynamic — it computes
+An interactive session shows that the lookup is dynamic — it computes
 different, updated answers each time::
 
     >>> g = Directory('games')
@@ -112,7 +112,7 @@ different, updated answers each time::
 Besides showing how descriptors can run computations, this example also
 reveals the purpose of the parameters to :meth:`__get__`.  The *self*
 parameter is *size*, an instance of *DirectorySize*.  The *obj* parameter is
-either *g* or *s*, an instance of *Directory*.  It is *obj* parameter that
+either *g* or *s*, an instance of *Directory*.  It is the *obj* parameter that
 lets the :meth:`__get__` method learn the target directory.  The *objtype*
 parameter is the class *Directory*.
 
@@ -265,7 +265,7 @@ A :term:`descriptor` is what we call any object that defines :meth:`__get__`,
 
 Optionally, descriptors can have a :meth:`__set_name__` method.  This is only
 used in cases where a descriptor needs to know either the class where it was
-created or the name of class variable it was assigned to.
+created or the name of the class variable it was assigned to.
 
 Descriptors get invoked by the dot operator during attribute lookup.  If a
 descriptor is accessed indirectly with ``vars(some_class)[descriptor_name]``,
