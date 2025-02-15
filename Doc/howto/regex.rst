@@ -19,6 +19,7 @@
    with the :mod:`re` module.  It provides a gentler introduction than the
    corresponding section in the Library Reference.
 
+.. highlight:: pycon
 
 Introduction
 ============

@@ -538,13 +538,17 @@ Simple example querying HTTP headers of the URL passed on the command line::
     asyncio.run(print_http_headers(url))
 
 
-Usage::
+Usage:
 
-    python example.py http://example.com/path/page.html
+.. code-block:: shell
 
-or with HTTPS::
+   python example.py http://example.com/path/page.html
 
-    python example.py https://example.com/path/page.html
+or with HTTPS:
+
+.. code-block:: shell
+
+   python example.py https://example.com/path/page.html
 
 
 .. _asyncio_example_create_connection-streams:

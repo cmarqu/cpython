@@ -52,6 +52,7 @@ Lock
        # ... later
        async with lock:
            # access shared state
+           ...
 
    which is equivalent to::
 
@@ -61,6 +62,7 @@ Lock
        await lock.acquire()
        try:
            # access shared state
+           ...
        finally:
            lock.release()
 
@@ -305,6 +307,7 @@ Semaphore
        # ... later
        async with sem:
            # work with shared resource
+           ...
 
    which is equivalent to::
 
@@ -314,6 +317,7 @@ Semaphore
        await sem.acquire()
        try:
            # work with shared resource
+           ...
        finally:
            sem.release()
 
@@ -397,7 +401,9 @@ Barrier
 
       asyncio.run(example_barrier())
 
-   Result of this example is::
+   Result of this example is:
+
+   .. code-block:: none
 
       <asyncio.locks.Barrier object at 0x... [filling, waiters:2/3]>
       <asyncio.locks.Barrier object at 0x... [draining, waiters:0/3]>
