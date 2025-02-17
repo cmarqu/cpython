@@ -13,7 +13,10 @@ blurb
 
 sphinxext-opengraph~=0.10.0
 sphinx-notfound-page~=1.0.0
-sphinx-codeautolink~=0.16.0
+
+# FIXME
+# sphinx-codeautolink~=0.17.0
+../../sphinx-codeautolink
 
 # The theme used by the documentation is stored separately, so we need
 # to install that as well.
