@@ -36,7 +36,6 @@ extensions = [
     'sphinx.ext.coverage',
     'sphinx.ext.doctest',
     'sphinx.ext.extlinks',
-    'sphinx_codeautolink',
 ]
 
 # Skip if downstream redistributors haven't installed them
@@ -52,6 +51,12 @@ except ImportError:
     pass
 else:
     extensions.append('sphinxext.opengraph')
+try:
+    import sphinx_codeautolink  # noqa: F401
+except ImportError:
+    pass
+else:
+    extensions.append('sphinx_codeautolink')
 
 
 doctest_global_setup = '''
@@ -405,9 +410,6 @@ html_use_opensearch = 'https://docs.python.org/' + version
 # Additional static files.
 html_static_path = ['_static', 'tools/static']
 
-# Additional CSS files.
-html_css_files = ["custom.css"]
-
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'python' + release.replace('.', '')
 
@@ -417,15 +419,26 @@ html_split_index = True
 # Split pot files one per reST file
 gettext_compact = False
 
-# Options for automatic links from code examples to reference docs
+# Options for automatic links from code examples to reference documentation.
 # (https://sphinx-codeautolink.readthedocs.io/)
 codeautolink_warn_on_missing_inventory = False
 codeautolink_warn_on_failed_resolve = False
-codeautolink_custom_blocks = {
-    # https://sphinx-codeautolink.readthedocs.io/en/latest/examples.html#doctest-code-blocks
-    "pycon3": "sphinx_codeautolink.clean_pycon",
-}
-# suppress_warnings = ["codeautolink"]
+
+from docutils.parsers.rst import Directive
+
+class AutolinkSkip(Directive):
+    """Dummy: Skip auto-linking next code block."""
+
+    has_content = False
+    required_arguments = 0
+    optional_arguments = 1
+
+    def run(self):
+        pass
+
+def setup(app):
+    # Only takes effect if the sphinx-codeautolink extension is not installed/
+    app.add_directive("autolink-skip", AutolinkSkip, override=False)
 
 # Options for LaTeX output
 # ------------------------
