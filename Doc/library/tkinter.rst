@@ -362,7 +362,7 @@ what those underlying Tcl/Tk commands look like.
 To illustrate, here is the Tcl/Tk equivalent of the main part of the Tkinter
 script above.
 
-::
+.. code-block:: tcl
 
     ttk::frame .frm -padding 10
     grid .frm
@@ -456,7 +456,7 @@ objects, you've seen that many Tcl/Tk operations appear as commands that
 take a widget pathname as its first parameter, followed by optional
 parameters, e.g.
 
-::
+.. code-block:: tcl
 
     destroy .
     grid .frm.btn -column 0 -row 0
@@ -466,7 +466,7 @@ when you create a widget in Tcl/Tk, it creates a Tcl command with the name
 of the widget pathname, with the first parameter to that command being the
 name of a method to call).
 
-::
+.. code-block:: tcl
 
     .frm.btn invoke
     .frm.lbl configure -text "Goodbye"
@@ -872,6 +872,7 @@ and to have a callback function trigger when that event type occurs.  The form
 of the bind method is::
 
    def bind(self, sequence, func, add=''):
+       ...
 
 where:
 

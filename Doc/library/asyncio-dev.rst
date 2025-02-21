@@ -175,23 +175,27 @@ will emit a :exc:`RuntimeWarning`::
 
     asyncio.run(main())
 
-Output::
+Output:
 
-  test.py:7: RuntimeWarning: coroutine 'test' was never awaited
-    test()
+.. code-block:: pytb
 
-Output in debug mode::
+   test.py:7: RuntimeWarning: coroutine 'test' was never awaited
+     test()
 
-  test.py:7: RuntimeWarning: coroutine 'test' was never awaited
-  Coroutine created at (most recent call last)
-    File "../t.py", line 9, in <module>
-      asyncio.run(main(), debug=True)
+Output in debug mode:
 
-    < .. >
+.. code-block:: pytb
 
-    File "../t.py", line 7, in main
-      test()
-    test()
+   test.py:7: RuntimeWarning: coroutine 'test' was never awaited
+   Coroutine created at (most recent call last)
+     File "../t.py", line 9, in <module>
+       asyncio.run(main(), debug=True)
+
+     < .. >
+
+     File "../t.py", line 7, in main
+       test()
+     test()
 
 The usual fix is to either await the coroutine or call the
 :meth:`asyncio.create_task` function::
@@ -220,7 +224,9 @@ Example of an unhandled exception::
 
     asyncio.run(main())
 
-Output::
+Output:
+
+.. code-block:: pytb
 
     Task exception was never retrieved
     future: <Task finished coro=<bug() done, defined at test.py:3>
@@ -236,7 +242,9 @@ traceback where the task was created::
 
     asyncio.run(main(), debug=True)
 
-Output in debug mode::
+Output in debug mode:
+
+.. code-block:: pytb
 
     Task exception was never retrieved
     future: <Task finished coro=<bug() done, defined at test.py:3>

@@ -156,7 +156,9 @@ continue to do it) is to end each module :mod:`!M` with::
 :mod:`!doctest` then examines docstrings in module :mod:`!M`.
 
 Running the module as a script causes the examples in the docstrings to get
-executed and verified::
+executed and verified:
+
+.. code-block:: shell
 
    python M.py
 
@@ -165,7 +167,9 @@ example(s) and the cause(s) of the failure(s) are printed to stdout, and the
 final line of output is ``***Test Failed*** N failures.``, where *N* is the
 number of examples that failed.
 
-Run it with the ``-v`` switch instead::
+Run it with the ``-v`` switch instead:
+
+.. code-block:: shell
 
    python M.py -v
 
@@ -218,7 +222,9 @@ program!   For example, perhaps :file:`example.txt` contains this:
        120
 
 Running ``doctest.testfile("example.txt")`` then finds the error in this
-documentation::
+documentation:
+
+.. code-block:: none
 
    File "./example.txt", line 14, in example.txt
    Failed example:
@@ -459,7 +465,9 @@ that are likely to change rapidly (for example, exact file paths and line
 numbers), this is one case where doctest works hard to be flexible in what it
 accepts.
 
-Simple example::
+Simple example:
+
+.. code-block:: pytb
 
    >>> [1, 2, 3].remove(42)
    Traceback (most recent call last):
@@ -471,7 +479,9 @@ x not in list`` detail as shown.
 
 The expected output for an exception must start with a traceback header, which
 may be either of the following two lines, indented the same as the first line of
-the example::
+the example:
+
+.. code-block:: pytb
 
    Traceback (most recent call last):
    Traceback (innermost last):
@@ -483,7 +493,9 @@ verbatim from an interactive session.
 The traceback stack is followed by the most interesting part: the line(s)
 containing the exception type and detail.  This is usually the last line of a
 traceback, but can extend across multiple lines if the exception has a
-multi-line detail::
+multi-line detail:
+
+.. code-block:: pytb
 
    >>> raise ValueError('multi\n    line\ndetail')
    Traceback (most recent call last):
@@ -496,7 +508,9 @@ The last three lines (starting with :exc:`ValueError`) are compared against the
 exception's type and detail, and the rest are ignored.
 
 Best practice is to omit the traceback stack, unless it adds significant
-documentation value to the example.  So the last example is probably better as::
+documentation value to the example.  So the last example is probably better as:
+
+.. code-block:: pytb
 
    >>> raise ValueError('multi\n    line\ndetail')
    Traceback (most recent call last):
@@ -1228,7 +1242,9 @@ doctest examples:
   the expected output, and decides whether they match.
 
 The relationships among these processing classes are summarized in the following
-diagram::
+diagram:
+
+.. code-block:: none
 
                                list of:
    +------+                   +---------+

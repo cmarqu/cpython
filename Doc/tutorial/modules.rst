@@ -146,7 +146,9 @@ It can also be used when utilising :keyword:`from` with similar effects::
 Executing modules as scripts
 ----------------------------
 
-When you run a Python module with ::
+When you run a Python module with
+
+.. code-block:: shell
 
    python fibo.py <arguments>
 

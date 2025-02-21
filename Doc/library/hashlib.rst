@@ -737,7 +737,9 @@ keys from a single one.
 Tree mode
 """""""""
 
-Here's an example of hashing a minimal tree with two leaf nodes::
+Here's an example of hashing a minimal tree with two leaf nodes:
+
+.. code-block:: none
 
        10
       /  \

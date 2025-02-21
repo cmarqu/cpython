@@ -38,10 +38,9 @@ The :mod:`functools` module defines the following functions:
 
    For example::
 
-        @cache
-        def factorial(n):
-            return n * factorial(n-1) if n else 1
-
+        >>> @cache
+        ... def factorial(n):
+        ...     return n * factorial(n-1) if n else 1
         >>> factorial(10)      # no previously cached result, makes 11 recursive calls
         3628800
         >>> factorial(5)       # just looks up cached value result
@@ -242,6 +241,8 @@ The :mod:`functools` module defines the following functions:
             except urllib.error.HTTPError:
                 return 'Not Found'
 
+   ::
+
         >>> for n in 8, 290, 308, 320, 8, 218, 320, 279, 289, 320, 9991:
         ...     pep = get_pep(n)
         ...     print(n, len(pep))
@@ -260,6 +261,8 @@ The :mod:`functools` module defines the following functions:
             if n < 2:
                 return n
             return fib(n-1) + fib(n-2)
+
+   ::
 
         >>> [fib(n) for n in range(16)]
         [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610]

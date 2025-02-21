@@ -148,7 +148,9 @@ Here's an example of using :mod:`optparse` in a simple script::
    (options, args) = parser.parse_args()
 
 With these few lines of code, users of your script can now do the "usual thing"
-on the command-line, for example::
+on the command-line, for example:
+
+.. code-block:: none
 
    <yourscript> --file=outfile -q
 
@@ -159,14 +161,18 @@ line, ``options.filename`` will be ``"outfile"`` and ``options.verbose`` will be
 ``False``.  :mod:`optparse` supports both long and short options, allows short
 options to be merged together, and allows options to be associated with their
 arguments in a variety of ways.  Thus, the following command lines are all
-equivalent to the above example::
+equivalent to the above example:
+
+.. code-block:: none
 
    <yourscript> -f outfile --quiet
    <yourscript> --quiet --file outfile
    <yourscript> -q -foutfile
    <yourscript> -qfoutfile
 
-Additionally, users can run one of the following ::
+Additionally, users can run one of the following
+
+.. code-block:: none
 
    <yourscript> -h
    <yourscript> --help
@@ -282,7 +288,9 @@ required option
    prevent you from implementing required options, but doesn't give you much
    help at it either.
 
-For example, consider this hypothetical command-line::
+For example, consider this hypothetical command-line:
+
+.. code-block:: shell
 
    prog -v --report report.txt foo bar
 
@@ -313,7 +321,9 @@ As an example of good command-line interface design, consider the humble ``cp``
 utility, for copying files.  It doesn't make much sense to try to copy files
 without supplying a destination and at least one source. Hence, ``cp`` fails if
 you run it with no arguments.  However, it has a flexible, useful syntax that
-does not require any options at all::
+does not require any options at all:
+
+.. code-block:: shell
 
    cp SOURCE DEST
    cp SOURCE ... DEST-DIR

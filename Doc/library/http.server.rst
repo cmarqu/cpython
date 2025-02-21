@@ -507,7 +507,6 @@ such as using different index file names by overriding the class attribute
       Retaining it could lead to further :ref:`security considerations
       <http.server-security>`.
 
-
 .. _http-server-cli:
 
 Command-line interface

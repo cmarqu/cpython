@@ -240,7 +240,9 @@ it as UTF-8::
    output.write( unistr )
    output.close()
 
-The following code would then read UTF-8 input from the file::
+The following code would then read UTF-8 input from the file:
+
+.. code-block:: python2
 
    input = UTF8_streamreader( open( '/tmp/output', 'rb') )
    print repr(input.read())
@@ -315,6 +317,7 @@ following Python code::
                      # Append the value of
                      # the expression to the
                      # resulting list.
+                     ...
 
 This means that when there are multiple :keyword:`!for`...\ :keyword:`!in`
 clauses, the resulting list will be equal to the product of the lengths of all
@@ -1203,4 +1206,3 @@ The authors would like to thank the following people for offering suggestions on
 various drafts of this article: David Bolen, Mark Hammond, Gregg Hauser, Jeremy
 Hylton, Fredrik Lundh, Detlef Lannert, Aahz Maruch, Skip Montanaro, Vladimir
 Marangozov, Tobias Polzin, Guido van Rossum, Neil Schemenauer, and Russ Schmidt.
-

@@ -824,7 +824,9 @@ recipes are being tested to see whether they prove their worth.
 
 Substantially all of these recipes and many, many others can be installed from
 the :pypi:`more-itertools` project found
-on the Python Package Index::
+on the Python Package Index:
+
+.. code-block:: shell
 
     python -m pip install more-itertools
 

@@ -267,7 +267,9 @@ Python fully supports mixed arithmetic: when a binary arithmetic operator has
 operands of different numeric types, the operand with the "narrower" type is
 widened to that of the other, where integer is narrower than floating point.
 Arithmetic with complex and real operands is defined by the usual mathematical
-formula, for example::
+formula, for example:
+
+.. code-block:: none
 
     x + complex(u, v) = complex(x + u, v)
     x * complex(u, v) = complex(x * u, x * v)
@@ -692,7 +694,9 @@ debugging, and in numerical work.
 Note that :meth:`float.hex` is an instance method, while
 :meth:`float.fromhex` is a class method.
 
-A hexadecimal string takes the form::
+A hexadecimal string takes the form:
+
+.. code-block:: none
 
    [sign] ['0x'] integer ['.' fraction] ['p' exponent]
 

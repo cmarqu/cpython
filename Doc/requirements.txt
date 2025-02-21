@@ -16,7 +16,7 @@ sphinx-notfound-page~=1.0.0
 
 # FIXME
 # sphinx-codeautolink~=0.17.0
-../../sphinx-codeautolink
+-e ../../sphinx-codeautolink
 
 # The theme used by the documentation is stored separately, so we need
 # to install that as well.

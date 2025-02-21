@@ -154,7 +154,9 @@ of the new API.
 
 .. function:: formatdate(timeval=None, localtime=False, usegmt=False)
 
-   Returns a date string as per :rfc:`2822`, e.g.::
+   Returns a date string as per :rfc:`2822`, e.g.:
+
+   .. code-block:: none
 
       Fri, 09 Nov 2001 01:08:47 -0000
 

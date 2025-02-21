@@ -288,7 +288,9 @@ message objects.
 
          msg.add_header('Content-Disposition', 'attachment', filename='bud.gif')
 
-      This will add a header that looks like ::
+      This will add a header that looks like
+
+      .. code-block:: none
 
          Content-Disposition: attachment; filename="bud.gif"
 

@@ -127,7 +127,9 @@ They are covered in more detail in the section :ref:`organizing-tests`.
 
 The final block shows a simple way to run the tests. :func:`unittest.main`
 provides a command-line interface to the test script.  When run from the command
-line, the above script produces an output that looks like this::
+line, the above script produces an output that looks like this:
+
+.. code-block:: none
 
    ...
    ----------------------------------------------------------------------
@@ -136,7 +138,9 @@ line, the above script produces an output that looks like this::
    OK
 
 Passing the ``-v`` option to your test script will instruct :func:`unittest.main`
-to enable a higher level of verbosity, and produce the following output::
+to enable a higher level of verbosity, and produce the following output:
+
+.. code-block:: none
 
    test_isupper (__main__.TestStringMethods.test_isupper) ... ok
    test_split (__main__.TestStringMethods.test_split) ... ok
@@ -162,7 +166,9 @@ Command-Line Interface
 ----------------------
 
 The unittest module can be used from the command line to run tests from
-modules, classes or even individual test methods::
+modules, classes or even individual test methods:
+
+.. code-block:: shell
 
    python -m unittest test_module1 test_module2
    python -m unittest test_module.TestClass
@@ -171,7 +177,9 @@ modules, classes or even individual test methods::
 You can pass in a list with any combination of module names, and fully
 qualified class or method names.
 
-Test modules can be specified by file path as well::
+Test modules can be specified by file path as well:
+
+.. code-block:: shell
 
    python -m unittest tests/test_something.py
 
@@ -181,15 +189,21 @@ to a module name by removing the '.py' and converting path separators into '.'.
 If you want to execute a test file that isn't importable as a module you should
 execute the file directly instead.
 
-You can run tests with more detail (higher verbosity) by passing in the -v flag::
+You can run tests with more detail (higher verbosity) by passing in the -v flag:
+
+.. code-block:: shell
 
    python -m unittest -v test_module
 
-When executed without arguments :ref:`unittest-test-discovery` is started::
+When executed without arguments :ref:`unittest-test-discovery` is started:
+
+.. code-block:: shell
 
    python -m unittest
 
-For a list of all the command-line options::
+For a list of all the command-line options:
+
+.. code-block:: shell
 
    python -m unittest -h
 
@@ -279,7 +293,9 @@ the project (this means that their filenames must be valid :ref:`identifiers
 <identifiers>`).
 
 Test discovery is implemented in :meth:`TestLoader.discover`, but can also be
-used from the command line. The basic command-line usage is::
+used from the command line. The basic command-line usage is:
+
+.. code-block:: shell
 
    cd project_directory
    python -m unittest discover
@@ -312,7 +328,9 @@ The ``discover`` sub-command has the following options:
 
 The :option:`-s`, :option:`-p`, and :option:`-t` options can be passed in
 as positional arguments in that order. The following two command lines
-are equivalent::
+are equivalent:
+
+.. code-block:: shell
 
    python -m unittest discover -s project_directory -p "*_test.py"
    python -m unittest discover project_directory "*_test.py"
@@ -564,7 +582,9 @@ Basic skipping looks like this::
            # test code that depends on the external resource
            pass
 
-This is the output of running the example above in verbose mode::
+This is the output of running the example above in verbose mode:
+
+.. code-block:: none
 
    test_format (__main__.MyTestCase.test_format) ... skipped 'not supported in this library version'
    test_nothing (__main__.MyTestCase.test_nothing) ... skipped 'demonstrating skipping'
@@ -659,7 +679,9 @@ For example, the following test::
                with self.subTest(i=i):
                    self.assertEqual(i % 2, 0)
 
-will produce the following output::
+will produce the following output:
+
+.. code-block:: pytb
 
    ======================================================================
    FAIL: test_even (__main__.NumbersTest.test_even) (i=1)
@@ -693,7 +715,9 @@ will produce the following output::
 
 Without using a subtest, execution would stop after the first failure,
 and the error would be less easy to diagnose because the value of ``i``
-wouldn't be displayed::
+wouldn't be displayed:
+
+.. code-block:: pytb
 
    ======================================================================
    FAIL: test_even (__main__.NumbersTest.test_even)

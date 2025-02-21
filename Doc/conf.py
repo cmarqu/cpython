@@ -41,11 +41,10 @@ extensions = [
 ]
 
 # Skip if downstream redistributors haven't installed them
-<<<<<<< HEAD
 _OPTIONAL_EXTENSIONS = (
     'notfound.extension',
     'sphinxext.opengraph',
-    'sphinx_codeautolink\,
+    'sphinx_codeautolink',
 )
 for optional_ext in _OPTIONAL_EXTENSIONS:
     try:
@@ -415,10 +414,15 @@ html_split_index = True
 # Split pot files one per reST file
 gettext_compact = False
 
-# Options for automatic links from code examples to reference documentation.
+# Options for automatic links from code examples to reference docs
 # (https://sphinx-codeautolink.readthedocs.io/)
 codeautolink_warn_on_missing_inventory = False
 codeautolink_warn_on_failed_resolve = False
+# codeautolink_warn_on_default_parse_fail = True
+# codeautolink_custom_blocks = {
+#     # https://sphinx-codeautolink.readthedocs.io/en/latest/examples.html#doctest-code-blocks
+#     "pycon3": "sphinx_codeautolink.clean_pycon",
+# }
 
 from docutils.parsers.rst import Directive
 
@@ -432,8 +436,9 @@ class AutolinkSkip(Directive):
     def run(self):
         pass
 
+
 def setup(app):
-    # Only takes effect if the sphinx-codeautolink extension is not installed/
+    # Only takes effect if the sphinx-codeautolink extension is not installed
     app.add_directive("autolink-skip", AutolinkSkip, override=False)
 
 # Options for LaTeX output

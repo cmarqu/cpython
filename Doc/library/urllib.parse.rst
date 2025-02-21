@@ -303,7 +303,9 @@ or on combining URL components into a URL string.
    syntax allowing parameters to be applied to each segment of the *path* portion
    of the URL (see :rfc:`2396`) is wanted.  A separate function is needed to
    separate the path segments and parameters.  This function returns a 5-item
-   :term:`named tuple`::
+   :term:`named tuple`:
+
+   .. code-block:: none
 
       (addressing scheme, network location, path, query, fragment identifier).
 

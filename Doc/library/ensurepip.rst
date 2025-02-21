@@ -47,14 +47,18 @@ Command line interface
 
 The command line interface is invoked using the interpreter's ``-m`` switch.
 
-The simplest possible invocation is::
+The simplest possible invocation is:
+
+.. code-block:: shell
 
     python -m ensurepip
 
 This invocation will install ``pip`` if it is not already installed,
 but otherwise does nothing. To ensure the installed version of ``pip``
 is at least as recent as the one available in ``ensurepip``, pass the
-``--upgrade`` option::
+``--upgrade`` option:
+
+.. code-block:: shell
 
     python -m ensurepip --upgrade
 

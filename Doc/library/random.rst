@@ -344,7 +344,9 @@ be found in any statistics text.
    (Calling conventions vary and some sources define 'beta'
    as the inverse of the scale).
 
-   The probability distribution function is::
+   The probability distribution function is:
+
+   .. code-block:: none
 
                  x ** (alpha - 1) * math.exp(-x / beta)
        pdf(x) =  --------------------------------------

@@ -50,12 +50,16 @@ larger than a :c:expr:`long` and the :c:expr:`long long` is at least as large
 as an :c:type:`off_t`.
 It may be necessary to configure and compile Python with certain compiler flags
 to enable this mode. For example, with Solaris 2.6 and 2.7 you need to do
-something like::
+something like:
+
+.. code-block:: shell
 
    CFLAGS="`getconf LFS_CFLAGS`" OPT="-g -O2 $CFLAGS" \
            ./configure
 
-On large-file-capable Linux systems, this might work::
+On large-file-capable Linux systems, this might work:
+
+.. code-block:: shell
 
    CFLAGS='-D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64' OPT="-g -O2 $CFLAGS" \
            ./configure

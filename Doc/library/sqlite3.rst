@@ -2000,7 +2000,9 @@ Command-line interface
 The :mod:`!sqlite3` module can be invoked as a script,
 using the interpreter's :option:`-m` switch,
 in order to provide a simple SQLite shell.
-The argument signature is as follows::
+The argument signature is as follows:
+
+.. code-block:: shell
 
    python -m sqlite3 [-h] [-v] [filename] [sql]
 

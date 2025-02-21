@@ -358,7 +358,9 @@ dictionary with your own prefixes and use those in the search functions::
         for char in actor.findall('role:character', ns):
             print(' |-->', char.text)
 
-These two approaches both output::
+These two approaches both output:
+
+.. code-block:: none
 
     John Cleese
      |--> Lancelot
@@ -1204,7 +1206,9 @@ ElementTree Objects
          by the user.
 
 
-This is the XML file that is going to be manipulated::
+This is the XML file that is going to be manipulated:
+
+.. code-block:: html
 
     <html>
         <head>

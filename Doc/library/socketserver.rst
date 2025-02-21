@@ -78,7 +78,9 @@ Server Creation Notes
 ---------------------
 
 There are five classes in an inheritance diagram, four of which represent
-synchronous servers of four types::
+synchronous servers of four types:
+
+.. code-block:: none
 
    +------------+
    | BaseServer |
@@ -711,4 +713,3 @@ The output of the example should look something like this:
 The :class:`ForkingMixIn` class is used in the same way, except that the server
 will spawn a new process for each request.
 Available only on POSIX platforms that support :func:`~os.fork`.
-

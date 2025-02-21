@@ -91,7 +91,9 @@ The script that will output the report of bacon.py::
    print('Modules not imported:')
    print('\n'.join(finder.badmodules.keys()))
 
-Sample output (may vary depending on the architecture)::
+Sample output (may vary depending on the architecture):
+
+.. code-block:: none
 
     Loaded modules:
     _types:
@@ -110,5 +112,3 @@ Sample output (may vary depending on the architecture)::
     Modules not imported:
     guido.python.ham
     baconhameggs
-
-

@@ -98,7 +98,9 @@ The :mod:`xml.parsers.expat` module contains two functions:
       </root>
 
    :attr:`StartElementHandler` will receive the following strings for each
-   element::
+   element:
+
+   .. code-block:: none
 
       http://default-namespace.org/ root
       http://www.python.org/ns/ elem1
@@ -591,7 +593,9 @@ arguments. ::
    <child2 name="fred">More text</child2>
    </parent>""", 1)
 
-The output from this program is::
+The output from this program is:
+
+.. code-block:: none
 
    Start element: parent {'id': 'top'}
    Start element: child1 {'name': 'paul'}
@@ -954,4 +958,3 @@ The ``errors`` module has the following attributes:
    appropriate standards. For example, "UTF-8" is valid, but "UTF8" is
    not. See https://www.w3.org/TR/2006/REC-xml11-20060816/#NT-EncodingDecl
    and https://www.iana.org/assignments/character-sets/character-sets.xhtml.
-

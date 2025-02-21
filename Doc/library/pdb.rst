@@ -60,7 +60,9 @@ running without the debugger using the :pdbcmd:`continue` command.
    val = 3
    print(f"{val} * 2 is {double(val)}")
 
-The debugger's prompt is ``(Pdb)``, which is the indicator that you are in debug mode::
+The debugger's prompt is ``(Pdb)``, which is the indicator that you are in debug mode:
+
+.. code-block:: none
 
    > ...(2)double()
    -> breakpoint()
@@ -78,7 +80,9 @@ The debugger's prompt is ``(Pdb)``, which is the indicator that you are in debug
 .. program:: pdb
 
 You can also invoke :mod:`pdb` from the command line to debug other scripts.  For
-example::
+example:
+
+.. code-block:: shell
 
    python -m pdb [-c command] (-m module | pyfile) [args ...]
 
@@ -487,7 +491,9 @@ can be overridden by the local file.
 
    Specify a list of commands for breakpoint number *bpnumber*.  The commands
    themselves appear on the following lines.  Type a line containing just
-   ``end`` to terminate the commands. An example::
+   ``end`` to terminate the commands. An example:
+
+   .. code-block:: none
 
       (Pdb) commands 1
       (com) p some_variable
@@ -637,7 +643,9 @@ can be overridden by the local file.
       print(lst)
 
    Display won't realize ``lst`` has been changed because the result of evaluation
-   is modified in place by ``lst.append(1)`` before being compared::
+   is modified in place by ``lst.append(1)`` before being compared:
+
+   .. code-block:: none
 
       > example.py(3)<module>()
       -> pass
@@ -651,7 +659,9 @@ can be overridden by the local file.
       -> print(lst)
       (Pdb)
 
-   You can do some tricks with copy mechanism to make it work::
+   You can do some tricks with copy mechanism to make it work:
+
+   .. code-block:: none
 
       > example.py(3)<module>()
       -> pass
@@ -716,7 +726,9 @@ can be overridden by the local file.
    in the line are left alone.
 
    As an example, here are two useful aliases (especially when placed in the
-   :file:`.pdbrc` file)::
+   :file:`.pdbrc` file):
+
+   .. code-block:: none
 
       # Print instance variables (usage "pi classInst")
       alias pi for k in %1.__dict__.keys(): print(f"%1.{k} = {%1.__dict__[k]}")
@@ -810,9 +822,11 @@ can be overridden by the local file.
         def inner(x):
             1 / x
 
-         out()
+        out()
 
-   calling ``pdb.pm()`` will allow to move between exceptions::
+   calling ``pdb.pm()`` will allow to move between exceptions:
+
+   .. code-block:: none
 
     > example.py(5)out()
     -> raise ValueError("reraise middle() error") from e

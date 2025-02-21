@@ -239,11 +239,15 @@ hyphenated words; only then will long words be broken if necessary, unless
       sentence ending consists of a lowercase letter followed by one of ``'.'``,
       ``'!'``, or ``'?'``, possibly followed by one of ``'"'`` or ``"'"``,
       followed by a space.  One problem with this algorithm is that it is
-      unable to detect the difference between "Dr." in ::
+      unable to detect the difference between "Dr." in
+
+      .. code-block:: none
 
          [...] Dr. Frankenstein's monster [...]
 
-      and "Spot." in ::
+      and "Spot." in
+
+      .. code-block:: none
 
          [...] See Spot. See Spot run [...]
 

@@ -615,7 +615,9 @@ SomeData in the global scope::
 
     >>> Animal = Enum('Animal', 'ANT BEE CAT DOG', qualname='SomeData.Animal')
 
-The complete signature is::
+The complete signature is:
+
+.. code-block:: none
 
     Enum(
         value='NewEnumName',

@@ -687,7 +687,9 @@ character ``'$'``.
    single: \\; in regular expressions
 
 Most of the :ref:`escape sequences <escape-sequences>` supported by Python
-string literals are also accepted by the regular expression parser::
+string literals are also accepted by the regular expression parser:
+
+.. code-block:: none
 
    \a      \b      \f      \n
    \N      \r      \t      \u
@@ -1677,15 +1679,21 @@ expressions.
 | ``%x``, ``%X``                 | ``[-+]?(0[xX])?[\dA-Fa-f]+``                |
 +--------------------------------+---------------------------------------------+
 
-To extract the filename and numbers from a string like ::
+To extract the filename and numbers from a string like
+
+.. code-block:: shell
 
    /usr/sbin/sendmail - 0 errors, 4 warnings
 
-you would use a :c:func:`!scanf` format like ::
+you would use a :c:func:`!scanf` format like
+
+.. code-block:: none
 
    %s - %d errors, %d warnings
 
-The equivalent regular expression would be ::
+The equivalent regular expression would be
+
+.. code-block:: none
 
    (\S+) - (\d+) errors, (\d+) warnings
 

@@ -111,7 +111,9 @@ a ``W`` appended to the name, while the ANSI version is exported with an ``A``
 appended to the name. The win32 ``GetModuleHandle`` function, which returns a
 *module handle* for a given module name, has the following C prototype, and a
 macro is used to expose one of them as ``GetModuleHandle`` depending on whether
-UNICODE is defined or not::
+UNICODE is defined or not:
+
+.. code-block:: none
 
    /* ANSI version */
    HMODULE GetModuleHandleA(LPCSTR lpModuleName);
@@ -982,7 +984,9 @@ Incomplete Types
 
 *Incomplete Types* are structures, unions or arrays whose members are not yet
 specified. In C, they are specified by forward declarations, which are defined
-later::
+later:
+
+.. code-block:: c
 
    struct cell; /* forward declaration */
 
@@ -1897,7 +1901,9 @@ The optional third item is the default value for this parameter.
 
 The following example demonstrates how to wrap the Windows ``MessageBoxW`` function so
 that it supports default parameters and named arguments. The C declaration from
-the windows header file is this::
+the windows header file is this:
+
+.. code-block:: c
 
    WINUSERAPI int WINAPI
    MessageBoxW(
@@ -1922,7 +1928,9 @@ The ``MessageBox`` foreign function can now be called in these ways::
 
 A second example demonstrates output parameters.  The win32 ``GetWindowRect``
 function retrieves the dimensions of a specified window by copying them into
-``RECT`` structure that the caller has to supply.  Here is the C declaration::
+``RECT`` structure that the caller has to supply.  Here is the C declaration:
+
+.. code-block:: c
 
    WINUSERAPI BOOL WINAPI
    GetWindowRect(
@@ -1997,7 +2005,9 @@ Utility functions
    ctypes type.  *offset* defaults to zero, and must be an integer that will be
    added to the internal pointer value.
 
-   ``byref(obj, offset)`` corresponds to this C code::
+   ``byref(obj, offset)`` corresponds to this C code:
+
+   .. code-block:: c
 
       (((char *)&obj) + offset)
 

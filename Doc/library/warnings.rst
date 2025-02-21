@@ -206,7 +206,9 @@ when it is first imported (invalid options are ignored, after printing a
 message to :data:`sys.stderr`).
 
 Individual warnings filters are specified as a sequence of fields separated by
-colons::
+colons:
+
+.. code-block:: none
 
    action:message:category:module:line
 
@@ -219,7 +221,9 @@ precedence over earlier ones).
 
 Commonly used warning filters apply to either all warnings, warnings in a
 particular category, or warnings raised by particular modules or packages.
-Some examples::
+Some examples:
+
+.. code-block:: none
 
    default                      # Show all warnings (even those ignored by default)
    ignore                       # Ignore all warnings
@@ -240,7 +244,9 @@ the :option:`-W` command-line option, the :envvar:`PYTHONWARNINGS` environment
 variable and calls to :func:`filterwarnings`.
 
 In regular release builds, the default warning filter has the following entries
-(in order of precedence)::
+(in order of precedence):
+
+.. code-block:: none
 
     default::DeprecationWarning:__main__
     ignore::DeprecationWarning

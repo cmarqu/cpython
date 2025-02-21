@@ -1177,6 +1177,7 @@ functions.
 
       class MyLogger(logging.getLoggerClass()):
           # ... override behaviour here
+          ...
 
 
 .. function:: getLogRecordFactory()

@@ -41,7 +41,9 @@ another rational number, or from a string.
    (But see the documentation for the :meth:`limit_denominator` method below.)
 
    The last version of the constructor expects a string.
-   The usual form for this instance is::
+   The usual form for this instance is:
+
+   .. code-block:: none
 
       [sign] numerator ['/' denominator]
 

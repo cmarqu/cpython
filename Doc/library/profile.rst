@@ -64,7 +64,9 @@ To profile a function that takes a single argument, you can do::
 your system.)
 
 The above action would run :func:`re.compile` and print profile results like
-the following::
+the following:
+
+.. code-block:: none
 
          214 function calls (207 primitive calls) in 0.002 seconds
 
@@ -126,7 +128,9 @@ them in various ways.
 .. program:: cProfile
 
 The files :mod:`cProfile` and :mod:`profile` can also be invoked as a script to
-profile another script.  For example::
+profile another script.  For example:
+
+.. code-block:: none
 
    python -m cProfile [-o output_file] [-s sort_order] (-m module | myscript.py)
 

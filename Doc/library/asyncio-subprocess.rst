@@ -37,7 +37,9 @@ obtain its result::
 
     asyncio.run(run('ls /zzz'))
 
-will print::
+will print:
+
+.. code-block:: none
 
     ['ls /zzz' exited with 1]
     [stderr]

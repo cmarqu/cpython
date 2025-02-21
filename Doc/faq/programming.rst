@@ -340,7 +340,7 @@ Why are default values shared between objects?
 This type of bug commonly bites neophyte programmers.  Consider this function::
 
    def foo(mydict={}):  # Danger: shared reference to one dict for all calls
-       ... compute something ...
+       # ... compute something ...
        mydict[key] = value
        return mydict
 
@@ -382,7 +382,7 @@ requested again.  This is called "memoizing", and can be implemented like this::
            return _cache[(arg1, arg2)]
 
        # Calculate the value
-       result = ... expensive computation ...
+       result = ...  # ... expensive computation ...
        _cache[(arg1, arg2)] = result           # Store result in the cache
        return result
 
@@ -848,7 +848,9 @@ How do I get int literal attribute instead of SyntaxError?
 ----------------------------------------------------------
 
 Trying to lookup an ``int`` literal attribute in the normal manner gives
-a :exc:`SyntaxError` because the period is seen as a decimal point::
+a :exc:`SyntaxError` because the period is seen as a decimal point:
+
+.. code-block:: none
 
    >>> 1.__class__
      File "<stdin>", line 1
@@ -1031,7 +1033,9 @@ See the :ref:`unicode-howto`.
 Can I end a raw string with an odd number of backslashes?
 ---------------------------------------------------------
 
-A raw string ending with an odd number of backslashes will escape the string's quote::
+A raw string ending with an odd number of backslashes will escape the string's quote:
+
+.. code-block:: none
 
    >>> r'C:\this\will\not\work\'
      File "<stdin>", line 1
@@ -1555,7 +1559,8 @@ that does something::
            ...  # code to search a mailbox
        elif isinstance(obj, Document):
            ...  # code to search a document
-       elif ...
+       elif ...:
+           ...
 
 A better approach is to define a ``search()`` method on all the classes and just
 call it::
@@ -2119,7 +2124,9 @@ location as ``foo.py`` (or you can override that with the optional parameter
 You can also automatically compile all files in a directory or directories using
 the :mod:`compileall` module.  You can do it from the shell prompt by running
 ``compileall.py`` and providing the path of a directory containing Python files
-to compile::
+to compile:
+
+.. code-block:: shell
 
        python -m compileall .
 

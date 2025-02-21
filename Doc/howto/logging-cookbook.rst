@@ -2695,11 +2695,15 @@ versions, you would need to implement the actual ownership change using e.g.
 :func:`os.chown`.
 
 In practice, the handler-creating function may be in a utility module somewhere
-in your project. Instead of the line in the configuration::
+in your project. Instead of the line in the configuration:
+
+.. code-block:: none
 
     '()': owned_file_handler,
 
-you could use e.g.::
+you could use e.g.:
+
+.. code-block:: none
 
     '()': 'ext://project.util.owned_file_handler',
 

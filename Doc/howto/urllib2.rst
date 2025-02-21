@@ -360,6 +360,7 @@ Number 1
         print('Reason: ', e.reason)
     else:
         # everything is fine
+        ...
 
 
 .. note::
@@ -386,6 +387,7 @@ Number 2
             print('Error code: ', e.code)
     else:
         # everything is fine
+        ...
 
 
 info and geturl
@@ -595,4 +597,3 @@ This document was reviewed and revised by John Lee.
        the proxy.
 .. [#] urllib opener for SSL proxy (CONNECT method): `ASPN Cookbook Recipe
        <https://code.activestate.com/recipes/456195-urrlib2-opener-for-ssl-proxy-connect-method/>`_.
-

@@ -255,6 +255,7 @@ membership test syntax like this::
 
    if address in network:
        # do something
+       ...
 
 Containment testing is done efficiently based on the network prefix::
 
@@ -337,4 +338,3 @@ you can still write code like the following::
        network = ipaddress.IPv4Network(address)
    except ValueError:
        print('address/netmask is invalid for IPv4:', address)
-

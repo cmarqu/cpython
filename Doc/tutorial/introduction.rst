@@ -233,7 +233,9 @@ This feature is particularly useful when you want to break long strings::
    >>> text
    'Put several strings within parentheses to have them joined together.'
 
-This only works with two literals though, not with variables or expressions::
+This only works with two literals though, not with variables or expressions:
+
+.. code-block:: pytb
 
    >>> prefix = 'Py'
    >>> prefix 'thon'  # can't concatenate a variable and a string literal
@@ -302,7 +304,9 @@ makes sure that ``s[:i] + s[i:]`` is always equal to ``s``::
 One way to remember how slices work is to think of the indices as pointing
 *between* characters, with the left edge of the first character numbered 0.
 Then the right edge of the last character of a string of *n* characters has
-index *n*, for example::
+index *n*, for example:
+
+.. code-block:: none
 
     +---+---+---+---+---+---+
     | P | y | t | h | o | n |

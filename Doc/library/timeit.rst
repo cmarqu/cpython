@@ -206,7 +206,9 @@ The module defines three convenience functions and a public class:
 Command-Line Interface
 ----------------------
 
-When called as a program from the command line, the following form is used::
+When called as a program from the command line, the following form is used:
+
+.. code-block:: shell
 
    python -m timeit [-n N] [-r N] [-u U] [-s S] [-p] [-v] [-h] [statement ...]
 

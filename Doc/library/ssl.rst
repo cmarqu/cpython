@@ -2194,7 +2194,9 @@ place.
 
 Python uses files to contain certificates.  They should be formatted as "PEM"
 (see :rfc:`1422`), which is a base-64 encoded form wrapped with a header line
-and a footer line::
+and a footer line:
+
+.. code-block:: none
 
       -----BEGIN CERTIFICATE-----
       ... (certificate in base64 PEM encoding) ...
@@ -2214,7 +2216,9 @@ certificates should just be concatenated together in the certificate file.  For
 example, suppose we had a three certificate chain, from our server certificate
 to the certificate of the certification authority that signed our server
 certificate, to the root certificate of the agency which issued the
-certification authority's certificate::
+certification authority's certificate:
+
+.. code-block:: none
 
       -----BEGIN CERTIFICATE-----
       ... (certificate for your server)...
@@ -2244,7 +2248,9 @@ Often the private key is stored in the same file as the certificate; in this
 case, only the ``certfile`` parameter to :meth:`SSLContext.load_cert_chain`
 needs to be passed.  If the private key is stored
 with the certificate, it should come before the first certificate in
-the certificate chain::
+the certificate chain:
+
+.. code-block:: none
 
    -----BEGIN RSA PRIVATE KEY-----
    ... (private key in base64 encoding) ...
@@ -2261,7 +2267,9 @@ services, you will need to acquire a certificate for that service.  There are
 many ways of acquiring appropriate certificates, such as buying one from a
 certification authority.  Another common practice is to generate a self-signed
 certificate.  The simplest way to do this is with the OpenSSL package, using
-something like the following::
+something like the following:
+
+.. code-block:: shell
 
   % openssl req -new -x509 -days 365 -nodes -out cert.pem -keyout cert.pem
   Generating a 1024 bit RSA private key

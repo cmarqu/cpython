@@ -1997,7 +1997,9 @@ The basic principle is that you patch where an object is *looked up*, which
 is not necessarily the same place as where it is defined. A couple of
 examples will help to clarify this.
 
-Imagine we have a project that we want to test with the following structure::
+Imagine we have a project that we want to test with the following structure:
+
+.. code-block:: none
 
     a.py
         -> Defines SomeClass

@@ -257,7 +257,9 @@ a server allowing dotted names and registering a multicall function.
             print("\nKeyboard interrupt received, exiting.")
             sys.exit(0)
 
-This ExampleService demo can be invoked from the command line::
+This ExampleService demo can be invoked from the command line:
+
+.. code-block:: shell
 
     python -m xmlrpc.server
 
@@ -282,7 +284,9 @@ The client that interacts with the above server is included in
     except Error as v:
         print("ERROR", v)
 
-This client which interacts with the demo XMLRPC server can be invoked as::
+This client which interacts with the demo XMLRPC server can be invoked as:
+
+.. code-block:: shell
 
     python -m xmlrpc.client
 

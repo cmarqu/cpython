@@ -350,7 +350,9 @@ Decimal objects
    *value* can be an integer, string, tuple, :class:`float`, or another :class:`Decimal`
    object. If no *value* is given, returns ``Decimal('0')``.  If *value* is a
    string, it should conform to the decimal numeric string syntax after leading
-   and trailing whitespace characters, as well as underscores throughout, are removed::
+   and trailing whitespace characters, as well as underscores throughout, are removed:
+
+   .. code-block:: none
 
       sign           ::=  '+' | '-'
       digit          ::=  '0' | '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9'
@@ -488,7 +490,9 @@ Decimal objects
 
       Compare the values of two Decimal instances.  :meth:`compare` returns a
       Decimal instance, and if either operand is a NaN then the result is a
-      NaN::
+      NaN:
+
+      .. code-block:: none
 
          a or b is a NaN  ==> Decimal('NaN')
          a < b            ==> Decimal('-1')
@@ -1749,7 +1753,9 @@ condition.
     conversions are silent. All other mixed operations raise :exc:`FloatOperation`.
 
 
-The following table summarizes the hierarchy of signals::
+The following table summarizes the hierarchy of signals:
+
+.. code-block:: none
 
    exceptions.ArithmeticError(exceptions.Exception)
        DecimalException
@@ -1921,7 +1927,7 @@ between threads calling :func:`getcontext`. For example::
    t1.start()
    t2.start()
    t3.start()
-    . . .
+   ...
 
 .. %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -2183,7 +2189,7 @@ applied to the *result* of the computation::
    Decimal('3.1416')
    >>> pi - Decimal('0.00005')        # Subtract unrounded numbers, then round
    Decimal('3.1415')
-   >>> pi + 0 - Decimal('0.00005').   # Intermediate values are rounded
+   >>> pi + 0 - Decimal('0.00005')    # Intermediate values are rounded
    Decimal('3.1416')
 
 Q. Some decimal values always print with exponential notation.  Is there a way

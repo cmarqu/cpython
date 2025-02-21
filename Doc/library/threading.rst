@@ -1126,6 +1126,7 @@ when they need to connect to the server::
        conn = connectdb()
        try:
            # ... use connection ...
+           ...
        finally:
            conn.close()
 
@@ -1345,12 +1346,14 @@ the following snippet::
 
    with some_lock:
        # do something...
+       ...
 
 is equivalent to::
 
    some_lock.acquire()
    try:
        # do something...
+       ...
    finally:
        some_lock.release()
 

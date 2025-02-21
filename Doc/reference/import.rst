@@ -106,7 +106,9 @@ contain the same Python code that any other module can contain, and Python
 will add some additional attributes to the module when it is imported.
 
 For example, the following file system layout defines a top level ``parent``
-package with three subpackages::
+package with three subpackages:
+
+.. code-block:: none
 
     parent/
         __init__.py
@@ -490,7 +492,9 @@ When a submodule is loaded using any mechanism (e.g. ``importlib`` APIs, the
 binding is placed in the parent module's namespace to the submodule object.
 For example, if package ``spam`` has a submodule ``foo``, after importing
 ``spam.foo``, ``spam`` will have an attribute ``foo`` which is bound to the
-submodule.  Let's say you have the following directory structure::
+submodule.  Let's say you have the following directory structure:
+
+.. code-block:: none
 
     spam/
         __init__.py
@@ -853,7 +857,9 @@ Package Relative Imports
 Relative imports use leading dots. A single leading dot indicates a relative
 import, starting with the current package. Two or more leading dots indicate a
 relative import to the parent(s) of the current package, one level per dot
-after the first. For example, given the following package layout::
+after the first. For example, given the following package layout:
+
+.. code-block:: none
 
     package/
         __init__.py

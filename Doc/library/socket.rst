@@ -2408,7 +2408,9 @@ This last example might require special privileges::
            print('Error sending CAN frame')
 
 Running an example several times with too small delay between executions, could
-lead to this error::
+lead to this error:
+
+.. code-block:: none
 
    OSError: [Errno 98] Address already in use
 

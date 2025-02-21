@@ -52,7 +52,9 @@ Display the 10 files allocating the most memory::
         print(stat)
 
 
-Example of output of the Python test suite::
+Example of output of the Python test suite:
+
+.. code-block:: none
 
     [ Top 10 ]
     <frozen importlib._bootstrap>:716: size=4855 KiB, count=39328, average=126 B
@@ -92,7 +94,9 @@ Take two snapshots and display the differences::
     for stat in top_stats[:10]:
         print(stat)
 
-Example of output before/after running some tests of the Python test suite::
+Example of output before/after running some tests of the Python test suite:
+
+.. code-block:: none
 
     [ Top 10 differences ]
     <frozen importlib._bootstrap>:716: size=8173 KiB (+4428 KiB), count=71332 (+39369), average=117 B
@@ -138,7 +142,9 @@ Code to display the traceback of the biggest memory block::
     for line in stat.traceback.format():
         print(line)
 
-Example of output of the Python test suite (traceback limited to 25 frames)::
+Example of output of the Python test suite (traceback limited to 25 frames):
+
+.. code-block:: none
 
     903 memory blocks: 870.1 KiB
       File "<frozen importlib._bootstrap>", line 716
@@ -222,7 +228,9 @@ ignoring ``<frozen importlib._bootstrap>`` and ``<unknown>`` files::
     snapshot = tracemalloc.take_snapshot()
     display_top(snapshot)
 
-Example of output of the Python test suite::
+Example of output of the Python test suite:
+
+.. code-block:: none
 
     Top 10 lines
     #1: Lib/base64.py:414: 419.8 KiB
@@ -277,7 +285,9 @@ memory usage during the computations::
   print(f"{first_size=}, {first_peak=}")
   print(f"{second_size=}, {second_peak=}")
 
-Output::
+Output:
+
+.. code-block:: none
 
   first_size=664, first_peak=3592984
   second_size=804, second_peak=29704
@@ -756,7 +766,9 @@ Traceback
           for line in traceback:
               print(line)
 
-      Output::
+      Output:
+
+      .. code-block:: pytb
 
           Traceback (most recent call first):
             File "test.py", line 9

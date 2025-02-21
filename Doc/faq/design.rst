@@ -16,7 +16,9 @@ Most people learn to love this feature after a while.
 
 Since there are no begin/end brackets there cannot be a disagreement between
 grouping perceived by the parser and the human reader.  Occasionally C
-programmers will encounter a fragment of code like this::
+programmers will encounter a fragment of code like this:
+
+.. code-block:: c
 
    if (x <= y)
            x++;
@@ -730,7 +732,9 @@ Why are colons required for the if/while/def/class statements?
 --------------------------------------------------------------
 
 The colon is required primarily to enhance readability (one of the results of
-the experimental ABC language).  Consider this::
+the experimental ABC language).  Consider this:
+
+.. code-block:: none
 
    if a == b
        print(a)

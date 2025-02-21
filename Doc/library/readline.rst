@@ -40,7 +40,9 @@ Readline library in general.
   If you use ``editline``/``libedit`` readline emulation on macOS, the
   initialization file located in your home directory is named
   ``.editrc``. For example, the following content in ``~/.editrc`` will
-  turn ON *vi* keybindings and TAB completion::
+  turn ON *vi* keybindings and TAB completion:
+
+   .. code-block:: none
 
     python:bind -v
     python:bind ^I rl_complete

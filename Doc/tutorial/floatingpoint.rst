@@ -44,7 +44,9 @@ will never be exactly 1/3, but will be an increasingly better approximation of
 
 In the same way, no matter how many base 2 digits you're willing to use, the
 decimal value 0.1 cannot be represented exactly as a base 2 fraction.  In base
-2, 1/10 is the infinitely repeating fraction ::
+2, 1/10 is the infinitely repeating fraction
+
+.. code-block:: none
 
    0.0001100110011001100110011001100110011001100110011...
 
@@ -275,11 +277,14 @@ precision" values.  IEEE 754 binary64 values contain 53 bits of precision, so
 on input the computer strives to convert 0.1 to the closest fraction it can of
 the form *J*/2**\ *N* where *J* is an integer containing exactly 53 bits.
 Rewriting
-::
+
+.. code-block:: none
 
    1 / 10 ~= J / (2**N)
 
-as ::
+as
+
+.. code-block:: none
 
    J ~= 2**N / 10
 

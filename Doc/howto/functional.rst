@@ -365,7 +365,9 @@ large amount of data.  Generator expressions are preferable in these situations.
 
 Generator expressions are surrounded by parentheses ("()") and list
 comprehensions are surrounded by square brackets ("[]").  Generator expressions
-have the form::
+have the form:
+
+.. code-block:: none
 
     ( expression for expr in sequence1
                  if condition1
@@ -427,7 +429,9 @@ list is 9 elements long:
 
 To avoid introducing an ambiguity into Python's grammar, if ``expression`` is
 creating a tuple, it must be surrounded with parentheses.  The first list
-comprehension below is a syntax error, while the second one is correct::
+comprehension below is a syntax error, while the second one is correct:
+
+.. code-block:: none
 
     # Syntax error
     [x, y for x in seq1 for y in seq2]

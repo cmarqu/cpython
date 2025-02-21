@@ -375,11 +375,15 @@ construct structured values to assign to specific headers.
 .. class:: Address(display_name='', username='', domain='', addr_spec=None)
 
    The class used to represent an email address.  The general form of an
-   address is::
+   address is:
+
+   .. code-block:: none
 
       [display_name] <username@domain>
 
-   or::
+   or:
+
+   .. code-block:: none
 
       username@domain
 

@@ -63,7 +63,9 @@ and debuggers.
 
       asyncio.run(main())
 
-   will print::
+   will print:
+
+   .. code-block:: none
 
       * Task(name='test', id=0x1039f0fe0)
       + Call stack:

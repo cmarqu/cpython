@@ -222,7 +222,9 @@ The :mod:`importlib.abc` module contains all of the core abstract base classes
 used by :keyword:`import`. Some subclasses of the core abstract base classes
 are also provided to help in implementing the core ABCs.
 
-ABC hierarchy::
+ABC hierarchy:
+
+.. code-block:: none
 
     object
      +-- MetaPathFinder

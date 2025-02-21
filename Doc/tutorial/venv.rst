@@ -42,7 +42,9 @@ For instance, executing the command with ``python3.12`` will install
 version 3.12.
 
 To create a virtual environment, decide upon a directory where you want to
-place it, and run the :mod:`venv` module as a script with the directory path::
+place it, and run the :mod:`venv` module as a script with the directory path:
+
+.. code-block:: shell
 
    python -m venv tutorial-env
 
@@ -58,11 +60,15 @@ definition files that some tooling supports.
 
 Once you've created a virtual environment, you may activate it.
 
-On Windows, run::
+On Windows, run:
+
+.. code-block:: doscon
 
   tutorial-env\Scripts\activate
 
-On Unix or MacOS, run::
+On Unix or MacOS, run:
+
+.. code-block:: shell
 
   source tutorial-env/bin/activate
 

@@ -70,7 +70,9 @@ To actually run a coroutine, asyncio provides the following mechanisms:
 
       asyncio.run(main())
 
-  Expected output::
+  Expected output:
+
+.. code-block:: none
 
       started at 17:13:52
       hello
@@ -100,7 +102,9 @@ To actually run a coroutine, asyncio provides the following mechanisms:
           print(f"finished at {time.strftime('%X')}")
 
   Note that expected output now shows that the snippet runs
-  1 second faster than before::
+  1 second faster than before:
+
+.. code-block:: none
 
       started at 17:14:32
       hello

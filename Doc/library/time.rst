@@ -779,7 +779,9 @@ Functions
       The :envvar:`TZ` environment variable should contain no whitespace.
 
    The standard format of the :envvar:`TZ` environment variable is (whitespace
-   added for clarity)::
+   added for clarity):
+
+   .. code-block:: none
 
       std offset [dst [offset [,start[/time], end[/time]]]]
 

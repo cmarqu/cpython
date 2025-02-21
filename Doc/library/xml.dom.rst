@@ -1000,7 +1000,9 @@ Accessor Methods
 
 The mapping from OMG IDL to Python defines accessor functions for IDL
 ``attribute`` declarations in much the way the Java mapping does.
-Mapping the IDL declarations ::
+Mapping the IDL declarations
+
+.. code-block:: omg-idl
 
    readonly attribute string someValue;
             attribute string anotherValue;
@@ -1030,4 +1032,3 @@ The IDL definitions do not fully embody the requirements of the W3C DOM API,
 such as the notion of certain objects, such as the return value of
 :meth:`getElementsByTagName`, being "live".  The Python DOM API does not require
 implementations to enforce such requirements.
-

@@ -1221,7 +1221,6 @@ Control flow
         ...         break
         ...     else:
         ...         continue
-        ...
         ... """), indent=4))
         Module(
             body=[

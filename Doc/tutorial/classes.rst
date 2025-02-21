@@ -220,7 +220,9 @@ new semantics.
 Class Definition Syntax
 -----------------------
 
-The simplest form of class definition looks like this::
+The simplest form of class definition looks like this:
+
+.. code-block:: none
 
    class ClassName:
        <statement-1>
@@ -408,6 +410,8 @@ of the class::
         def __init__(self, name):
             self.name = name    # instance variable unique to each instance
 
+::
+
     >>> d = Dog('Fido')
     >>> e = Dog('Buddy')
     >>> d.kind                  # shared by all dogs
@@ -435,6 +439,8 @@ instances::
         def add_trick(self, trick):
             self.tricks.append(trick)
 
+::
+
     >>> d = Dog('Fido')
     >>> e = Dog('Buddy')
     >>> d.add_trick('roll over')
@@ -452,6 +458,8 @@ Correct design of the class should use an instance variable instead::
 
         def add_trick(self, trick):
             self.tricks.append(trick)
+
+::
 
     >>> d = Dog('Fido')
     >>> e = Dog('Buddy')
@@ -567,7 +575,9 @@ Inheritance
 
 Of course, a language feature would not be worthy of the name "class" without
 supporting inheritance.  The syntax for a derived class definition looks like
-this::
+this:
+
+.. code-block:: none
 
    class DerivedClassName(BaseClassName):
        <statement-1>
@@ -583,6 +593,7 @@ expressions are also allowed.  This can be useful, for example, when the base
 class is defined in another module::
 
    class DerivedClassName(modname.BaseClassName):
+       ...
 
 Execution of a derived class definition proceeds the same as for a base class.
 When the class object is constructed, the base class is remembered.  This is
@@ -628,7 +639,9 @@ Multiple Inheritance
 --------------------
 
 Python supports a form of multiple inheritance as well.  A class definition with
-multiple base classes looks like this::
+multiple base classes looks like this:
+
+.. code-block:: none
 
    class DerivedClassName(Base1, Base2, Base3):
        <statement-1>

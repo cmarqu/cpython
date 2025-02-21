@@ -19,7 +19,9 @@ Effects of the Python Development Mode
 --------------------------------------
 
 Enabling the Python Development Mode is similar to the following command, but
-with additional effects described below::
+with additional effects described below:
+
+.. code-block:: shell
 
     PYTHONMALLOC=debug PYTHONASYNCIODEBUG=1 python -W default -X faulthandler
 

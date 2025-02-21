@@ -25,7 +25,9 @@ Command-Line Usage
 ------------------
 
 The :mod:`trace` module can be invoked from the command line.  It can be as
-simple as ::
+simple as
+
+.. code-block:: shell
 
    python -m trace --count -C . somefile.py ...
 
@@ -221,4 +223,3 @@ A simple example demonstrating the use of the programmatic interface::
    # make a report, placing output in the current directory
    r = tracer.results()
    r.write_results(show_missing=True, coverdir=".")
-

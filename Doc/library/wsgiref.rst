@@ -259,7 +259,9 @@ manipulation of WSGI response headers using a mapping-like interface.
 
          h.add_header('content-disposition', 'attachment', filename='bud.gif')
 
-      The above will add a header that looks like this::
+      The above will add a header that looks like this:
+
+      .. code-block:: none
 
          Content-Disposition: attachment; filename="bud.gif"
 
@@ -895,5 +897,3 @@ directory and port number (default: 8000) on the command line::
         except KeyboardInterrupt:
             print("Shutting down.")
             httpd.server_close()
-
-

@@ -31,7 +31,9 @@ The built-in function :func:`help` invokes the online help system in the
 interactive interpreter, which uses :mod:`!pydoc` to generate its documentation
 as text on the console.  The same text documentation can also be viewed from
 outside the Python interpreter by running :program:`pydoc` as a script at the
-operating system's command prompt. For example, running ::
+operating system's command prompt. For example, running
+
+.. code-block:: shell
 
    python -m pydoc sys
 

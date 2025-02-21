@@ -65,7 +65,7 @@ parameters:
 
 The options are, naturally, mutually exclusive.  Usage example:
 
-.. code-block:: bash
+.. code-block:: shell
 
    python -m webbrowser -t "https://www.python.org"
 

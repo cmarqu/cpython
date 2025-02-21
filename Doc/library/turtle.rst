@@ -2745,11 +2745,15 @@ not from within the demo-viewer).
    :synopsis: A viewer for example turtle scripts
 
 The :mod:`turtledemo` package includes a set of demo scripts.  These
-scripts can be run and viewed using the supplied demo viewer as follows::
+scripts can be run and viewed using the supplied demo viewer as follows:
+
+.. code-block:: shell
 
    python -m turtledemo
 
-Alternatively, you can run the demo scripts individually.  For example, ::
+Alternatively, you can run the demo scripts individually.  For example,
+
+.. code-block:: shell
 
    python -m turtledemo.bytedesign
 
