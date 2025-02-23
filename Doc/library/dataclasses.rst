@@ -227,7 +227,7 @@ Module contents
    :meth:`~object.__init__` method, which will be defined as::
 
      def __init__(self, a: int, b: int = 0):
-        ...
+         ...
 
    :exc:`TypeError` will be raised if a field without a default value
    follows a field with a default value.  This is true whether this

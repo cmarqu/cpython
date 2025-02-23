@@ -419,10 +419,40 @@ gettext_compact = False
 codeautolink_warn_on_missing_inventory = False
 codeautolink_warn_on_failed_resolve = False
 # codeautolink_warn_on_default_parse_fail = True
-# codeautolink_custom_blocks = {
-#     # https://sphinx-codeautolink.readthedocs.io/en/latest/examples.html#doctest-code-blocks
-#     "pycon3": "sphinx_codeautolink.clean_pycon",
-# }
+# codeautolink_global_preface = """import itertools"""
+
+def clean_howto_functional(source: str) -> tuple[str, str]:
+    """Clean up `=>` syntax used in `howto/functional.rst` to pure Python.
+
+    An example of such a code block is::
+
+       zip(['a', 'b', 'c'], (1, 2, 3)) =>
+         ('a', 1), ('b', 2), ('c', 3)
+    """
+    if "=>" not in source:
+        # no such syntax, exit early
+        return source, source
+    in_statement = False
+    clean_lines = []
+    for line in source.splitlines():
+        if line.endswith("=>"):
+            in_statement = True
+            clean_lines.append(line.removesuffix("=>").rstrip())
+        elif in_statement:
+            clean_lines.append("# " + line)  # comment out output after the "=>"
+        else:
+            clean_lines.append(line)  # e.g. an import statement
+
+    transformed_source = "\n".join(clean_lines)
+    # print(f"Cleaned up source from\n{source}\nto\n{transformed_source}")
+    return source, transformed_source
+
+
+codeautolink_custom_blocks = {
+    # https://sphinx-codeautolink.readthedocs.io/en/latest/examples.html#doctest-code-blocks
+    "python3": clean_howto_functional,
+}
+
 
 from docutils.parsers.rst import Directive
 
