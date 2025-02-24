@@ -15,6 +15,15 @@
    import operator
    import random
 
+.. autolink-preface::
+   :level: file
+
+   from itertools import *
+   import collections
+   import math
+   import operator
+   import random
+
 --------------
 
 This module implements a number of :term:`iterator` building blocks inspired

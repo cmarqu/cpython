@@ -15,6 +15,12 @@
     import itertools
     __name__ = '<doctest>'
 
+.. autolink-preface::
+   :level: file
+
+   from collections import *
+   import itertools
+
 --------------
 
 This module implements specialized container datatypes providing alternatives to

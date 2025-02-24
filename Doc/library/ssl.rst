@@ -7,7 +7,14 @@
 .. moduleauthor:: Bill Janssen <bill.janssen@gmail.com>
 .. sectionauthor::  Bill Janssen <bill.janssen@gmail.com>
 
-**Source code:** :source:`Lib/ssl.py`
+.. testsetup::
+
+   import ssl
+
+.. autolink-preface::
+   :level: file
+
+   import ssl
 
 .. index:: single: OpenSSL; (use in module ssl)
 

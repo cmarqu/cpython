@@ -12,6 +12,11 @@
    def myfunc(alist):
        return len(alist)
 
+.. autolink-preface::
+   :level: file
+
+   import dis
+
 --------------
 
 The :mod:`dis` module supports the analysis of CPython :term:`bytecode` by

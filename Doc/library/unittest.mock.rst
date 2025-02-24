@@ -9,6 +9,19 @@
 
 .. versionadded:: 3.3
 
+.. autolink-preface::
+   :level: file
+
+   import asyncio
+   import inspect
+   import unittest
+   import threading
+   from unittest.mock import sentinel, DEFAULT, ANY
+   from unittest.mock import patch, call, Mock, MagicMock, PropertyMock, AsyncMock
+   from unittest.mock import ThreadingMock
+   from unittest.mock import mock_open
+   from unittest.mock import seal
+
 **Source code:** :source:`Lib/unittest/mock.py`
 
 --------------

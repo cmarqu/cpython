@@ -12,16 +12,24 @@
 
 .. testsetup::
 
-    import asyncio
-    import unittest
-    from unittest.mock import Mock, MagicMock, AsyncMock, patch, call, sentinel
+   import asyncio
+   import unittest
+   from unittest.mock import Mock, MagicMock, AsyncMock, patch, call, sentinel
 
-    class SomeClass:
-        attribute = 'this is a doctest'
+   class SomeClass:
+       attribute = 'this is a doctest'
 
-        @staticmethod
-        def static_method():
-            pass
+       @staticmethod
+       def static_method():
+           pass
+
+
+.. autolink-preface::
+   :level: file
+
+   import asyncio
+   import unittest
+   from unittest.mock import Mock, MagicMock, AsyncMock, patch, call, sentinel
 
 Using Mock
 ----------

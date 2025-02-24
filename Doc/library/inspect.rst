@@ -6,6 +6,12 @@
    import inspect
    from inspect import *
 
+.. autolink-preface::
+   :level: file
+
+   import inspect
+   from inspect import *
+
 .. module:: inspect
    :synopsis: Extract information and source code from live objects.
 

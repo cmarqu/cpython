@@ -12,6 +12,12 @@
    import annotationlib
    from annotationlib import *
 
+.. autolink-preface::
+   :level: file
+
+   import annotationlib
+   from annotationlib import *
+
 --------------
 
 The :mod:`!annotationlib` module provides tools for introspecting
@@ -484,4 +490,3 @@ annotations from the class and puts them in a separate attribute:
             typ.__annotate__ = wrapped_annotate
          typ.classvars = classvars  # Store the ClassVars in a separate attribute
          return typ
-

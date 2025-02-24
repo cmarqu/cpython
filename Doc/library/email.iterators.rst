@@ -4,6 +4,12 @@
 .. module:: email.iterators
    :synopsis: Iterate over a  message object tree.
 
+.. autolink-preface::
+   :level: file
+
+   import email
+   from email.iterators import _structure
+
 **Source code:** :source:`Lib/email/iterators.py`
 
 --------------

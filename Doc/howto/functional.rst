@@ -4,6 +4,13 @@
   Functional Programming HOWTO
 ********************************
 
+.. autolink-preface::
+   :level: file
+
+   import functools
+   import itertools
+
+
 :Author: A. M. Kuchling
 :Release: 0.32
 

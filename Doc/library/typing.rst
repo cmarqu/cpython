@@ -8,6 +8,13 @@
    from dataclasses import dataclass
    from typing import *
 
+.. autolink-preface::
+   :level: file
+
+   import typing
+   from dataclasses import dataclass
+   from typing import *
+
 .. module:: typing
    :synopsis: Support for type hints (see :pep:`484`).
 

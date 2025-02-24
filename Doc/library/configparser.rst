@@ -56,6 +56,11 @@ can be customized by end users easily.
    os.remove("example.ini")
    os.remove("override.ini")
 
+.. autolink-preface::
+   :level: file
+
+   import configparser
+
 
 Quick Start
 -----------

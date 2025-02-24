@@ -6,6 +6,11 @@
 
 .. versionadded:: 3.4
 
+.. autolink-preface::
+   :level: file
+
+   from pathlib import PurePath, PurePosixPath, PureWindowsPath
+
 **Source code:** :source:`Lib/pathlib/`
 
 .. index:: single: path; operations

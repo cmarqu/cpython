@@ -9,7 +9,12 @@
 
 .. testsetup::
 
-    import ast
+   import ast
+
+.. autolink-preface::
+   :level: file
+
+   import ast
 
 **Source code:** :source:`Lib/ast.py`
 
@@ -1221,6 +1226,7 @@ Control flow
         ...         break
         ...     else:
         ...         continue
+        ...
         ... """), indent=4))
         Module(
             body=[

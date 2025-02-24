@@ -9,6 +9,11 @@
    :noindex:
    :no-index:
 
+.. autolink-preface::
+   :level: file
+
+   import email
+   from email import message_from_binary_file
 
 The :class:`Message` class is very similar to the
 :class:`~email.message.EmailMessage` class, without the methods added by that

@@ -17,6 +17,10 @@
 
    import hashlib
 
+.. autolink-preface::
+   :level: file
+
+   import hashlib
 
 --------------
 

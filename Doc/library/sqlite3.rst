@@ -20,6 +20,11 @@
    dst.close()
    del src, dst
 
+.. autolink-preface::
+   :level: file
+
+   import sqlite3
+
 .. _sqlite3-intro:
 
 SQLite is a C library that provides a lightweight disk-based database that

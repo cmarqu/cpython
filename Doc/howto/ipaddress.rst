@@ -2,6 +2,11 @@
 
    import ipaddress
 
+.. autolink-preface::
+   :level: file
+
+   import ipaddress
+
 .. _ipaddress-howto:
 
 ***************************************
