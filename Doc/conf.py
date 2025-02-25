@@ -484,6 +484,17 @@ def setup(app):
     app.add_directive("autolink-skip", AutolinkSkip, override=False)
     app.add_directive("autolink-preface", AutolinkPreface, override=False)
 
+
+suppress_warnings = [
+    "app.add_directive",
+    "codeautolink.import_star",
+    "codeautolink.match_block",
+    "codeautolink.match_name",
+    "codeautolink.parse_block",
+    "config.cache",
+]
+
+
 # Options for LaTeX output
 # ------------------------
 
