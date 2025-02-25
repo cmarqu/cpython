@@ -467,9 +467,22 @@ class AutolinkSkip(Directive):
         pass
 
 
+class AutolinkPreface(Directive):
+    """Dummy: Invisible imports for code blocks."""
+
+    has_content = True
+    required_arguments = 0
+    optional_arguments = 1
+    final_argument_whitespace = True
+
+    def run(self):
+        return []
+
+
 def setup(app):
     # Only takes effect if the sphinx-codeautolink extension is not installed
     app.add_directive("autolink-skip", AutolinkSkip, override=False)
+    app.add_directive("autolink-preface", AutolinkPreface, override=False)
 
 # Options for LaTeX output
 # ------------------------
