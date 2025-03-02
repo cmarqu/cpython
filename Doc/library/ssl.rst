@@ -11,11 +11,6 @@
 
    import ssl
 
-.. autolink-preface::
-   :level: file
-
-   import ssl
-
 .. index:: single: OpenSSL; (use in module ssl)
 
 .. index:: TLS, SSL, Transport Layer Security, Secure Sockets Layer

@@ -11,11 +11,6 @@
 
    import ast
 
-.. autolink-preface::
-   :level: file
-
-   import ast
-
 **Source code:** :source:`Lib/ast.py`
 
 --------------

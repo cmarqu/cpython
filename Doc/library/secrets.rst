@@ -13,12 +13,6 @@
    from secrets import *
    __name__ = '<doctest>'
 
-.. autolink-preface::
-   :level: file
-
-   from secrets import *
-
-
 **Source code:** :source:`Lib/secrets.py`
 
 -------------

@@ -490,12 +490,6 @@ Return types
    libc = CDLL(find_library('c'))
    strchr = libc.strchr
 
-.. autolink-preface::
-   :level: file
-
-   from ctypes import CDLL, c_char, c_char_p
-   from ctypes.util import find_library
-
 By default functions are assumed to return the C :c:expr:`int` type.  Other
 return types can be specified by setting the :attr:`~_CFuncPtr.restype` attribute of the
 function object.

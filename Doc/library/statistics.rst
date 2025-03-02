@@ -17,12 +17,6 @@
    import math
    __name__ = '<doctest>'
 
-.. autolink-preface::
-   :level: file
-
-   from statistics import *
-   import math
-
 --------------
 
 This module provides functions for calculating mathematical statistics of

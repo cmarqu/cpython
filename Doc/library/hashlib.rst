@@ -17,11 +17,6 @@
 
    import hashlib
 
-.. autolink-preface::
-   :level: file
-
-   import hashlib
-
 --------------
 
 This module implements a common interface to many different hash algorithms.

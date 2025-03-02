@@ -28,14 +28,6 @@
    # make sure other tests (outside this file) get a fresh context
    setcontext(Context())
 
-.. autolink-preface::
-   :level: file
-
-   import decimal
-   import math
-   from decimal import *
-
-
 --------------
 
 The :mod:`decimal` module provides support for fast correctly rounded

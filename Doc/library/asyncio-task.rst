@@ -72,7 +72,7 @@ To actually run a coroutine, asyncio provides the following mechanisms:
 
   Expected output:
 
-.. code-block:: none
+  .. code-block:: none
 
       started at 17:13:52
       hello
@@ -104,7 +104,7 @@ To actually run a coroutine, asyncio provides the following mechanisms:
   Note that expected output now shows that the snippet runs
   1 second faster than before:
 
-.. code-block:: none
+  .. code-block:: none
 
       started at 17:14:32
       hello

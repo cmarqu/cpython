@@ -18,12 +18,6 @@
    import itertools
    __name__ = '<doctest>'
 
-.. autolink-preface::
-   :level: file
-
-   from collections.abc import *
-   import itertools
-
 --------------
 
 This module provides :term:`abstract base classes <abstract base class>` that

@@ -3,12 +3,6 @@
    import math
    from fractions import Fraction
 
-.. autolink-preface::
-   :level: file
-
-   import math
-   from fractions import Fraction
-
 .. _tut-fp-issues:
 
 **************************************************

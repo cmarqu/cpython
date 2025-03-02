@@ -12,13 +12,6 @@
    import graphlib
    from graphlib import *
 
-
-.. autolink-preface::
-   :level: file
-
-   import graphlib
-   from graphlib import *
-
 --------------
 
 

@@ -5,11 +5,6 @@
 
    from struct import *
 
-.. autolink-preface::
-   :level: file
-
-   from struct import *
-
 .. module:: struct
    :synopsis: Interpret bytes as packed binary data.
 

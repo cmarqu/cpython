@@ -13,12 +13,6 @@
    import operator
    from operator import itemgetter, iadd
 
-.. autolink-preface::
-   :level: file
-
-   import operator
-   from operator import itemgetter, iadd
-
 --------------
 
 The :mod:`operator` module exports a set of efficient functions corresponding to

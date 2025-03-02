@@ -15,12 +15,6 @@
    import sys
    from difflib import *
 
-.. autolink-preface::
-   :level: file
-
-   import sys
-   from difflib import *
-
 --------------
 
 This module provides classes and functions for comparing sequences. It

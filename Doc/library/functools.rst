@@ -18,12 +18,6 @@
    import functools
    from functools import *
 
-.. autolink-preface::
-   :level: file
-
-   import functools
-   from functools import *
-
 --------------
 
 The :mod:`functools` module is for higher-order functions: functions that act on

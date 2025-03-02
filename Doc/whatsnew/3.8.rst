@@ -56,16 +56,6 @@ For full details, see the :ref:`changelog <changelog>`.
    import re
    import math
 
-.. autolink-preface::
-   :level: file
-
-   from datetime import date
-   from math import cos, radians
-   from unicodedata import normalize
-   import re
-   import math
-
-
 Summary -- Release highlights
 =============================
 

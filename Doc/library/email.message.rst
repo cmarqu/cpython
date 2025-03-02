@@ -7,11 +7,6 @@
 .. sectionauthor:: R. David Murray <rdmurray@bitdance.com>,
                    Barry A. Warsaw <barry@python.org>
 
-.. autolink-preface::
-   :level: file
-
-   from email import message_from_binary_file
-
 **Source code:** :source:`Lib/email/message.py`
 
 --------------

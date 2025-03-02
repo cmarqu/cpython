@@ -19,11 +19,6 @@
    import os
    os.remove("my_drawing.ps")
 
-.. autolink-preface::
-   :level: file
-
-   from turtle import *
-
 --------------
 
 Introduction

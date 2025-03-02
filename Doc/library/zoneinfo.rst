@@ -9,13 +9,6 @@
 .. moduleauthor:: Paul Ganssle <paul@ganssle.io>
 .. sectionauthor:: Paul Ganssle <paul@ganssle.io>
 
-.. autolink-preface::
-   :level: file
-
-   import pickle
-   from zoneinfo import ZoneInfo
-   from datetime import datetime, timedelta
-
 **Source code:** :source:`Lib/zoneinfo`
 
 --------------

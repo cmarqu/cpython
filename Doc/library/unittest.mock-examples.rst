@@ -23,14 +23,6 @@
        def static_method():
            pass
 
-
-.. autolink-preface::
-   :level: file
-
-   import asyncio
-   import unittest
-   from unittest.mock import Mock, MagicMock, AsyncMock, patch, call, sentinel
-
 Using Mock
 ----------
 

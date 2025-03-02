@@ -4,11 +4,6 @@
 .. module:: re
    :synopsis: Regular expression operations.
 
-.. autolink-preface::
-   :level: file
-
-   import re
-
 .. moduleauthor:: Fredrik Lundh <fredrik@pythonware.com>
 .. sectionauthor:: Andrew M. Kuchling <amk@amk.ca>
 
